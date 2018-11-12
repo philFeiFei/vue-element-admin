@@ -9,7 +9,7 @@
       </div>
 
       <el-form-item prop="username">
-        <span class="svg-container svg-container_login">
+        <span class="svg-container">
           <svg-icon icon-class="user" />
         </span>
         <el-input v-model="loginForm.username" :placeholder="$t('login.username')" name="username" type="text" auto-complete="on" />
@@ -84,8 +84,18 @@ export default {
       },
       passwordType: 'password',
       loading: false,
-      showDialog: false
+      showDialog: false,
+      redirect: undefined
     }
+  },
+  watch: {
+    $route: {
+      handler: function(route) {
+        this.redirect = route.query && route.query.redirect
+      },
+      immediate: true
+    }
+
   },
   created() {
     // window.addEventListener('hashchange', this.afterQRScan)
@@ -107,7 +117,7 @@ export default {
           this.loading = true
           this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
             this.loading = false
-            this.$router.push({ path: '/' })
+            this.$router.push({ path: this.redirect || '/' })
           }).catch(() => {
             this.loading = false
           })
@@ -202,6 +212,7 @@ $light_gray: #eee;
     left: 0;
     right: 0;
     width: 520px;
+    max-width: 100%;
     padding: 35px 35px 15px 35px;
     margin: 120px auto;
   }
@@ -221,9 +232,6 @@ $light_gray: #eee;
     vertical-align: middle;
     width: 30px;
     display: inline-block;
-    &_login {
-      font-size: 20px;
-    }
   }
   .title-container {
     position: relative;

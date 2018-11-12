@@ -50,6 +50,7 @@
 
 - 模板建议使用: [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)
 - 桌面端: [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
+- Typescript版: [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (鸣谢: [@Armour](https://github.com/Armour))
 
 群主 **[圈子](https://jianshiapp.com/circles/1209)** 楼主会经常分享一些技术相关的东西，或者加入[qq 群](https://github.com/PanJiaChen/vue-element-admin/issues/602)
 
@@ -129,6 +130,7 @@
   - 头像上传
   - 返回顶部
   - 拖拽Dialog
+  - 拖拽Select
   - 拖拽看板
   - 列表拖拽
   - SplitPane
@@ -208,6 +210,14 @@ Detailed changes for each release are documented in the [release notes](https://
 ![donate](https://panjiachen.github.io/donate/donation.png)
 
 [Paypal Me](https://www.paypal.me/panfree23)
+
+## Browsers support
+
+Modern browsers and Internet Explorer 10+.
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
+| --------- | --------- | --------- | --------- |
+| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
 ## License
 
